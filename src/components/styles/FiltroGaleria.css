@@ -1,0 +1,58 @@
+/* FiltroGaleria.css */
+#filtro-galeria {
+  max-width: 100%;
+
+  margin: 1rem;
+
+}
+
+#filtro-galeria .filtro-header {
+  cursor: pointer;
+  align-items: center;
+  overflow: hidden;
+
+}
+
+#filtro-galeria .texto-ocultar {
+  overflow: hidden; /* Oculta cualquier contenido que desborde */
+  white-space: nowrap; /* Evita que el texto pase a una nueva línea */
+  text-overflow: ellipsis; /* Añade '...' al final si el texto es demasiado largo */
+}
+
+#filtro-galeria .list-group-item {
+  cursor: pointer;
+}
+
+#filtro-galeria .check-opcion {
+  margin-bottom: 5px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+
+}
+
+#filtro-galeria .filtro-titulo {
+  font-size: 1.25rem; /* Tamaño de fuente */
+  font-weight: bold;
+  color: #333; /* Color del texto */
+  margin-bottom: 10px; /* Espacio entre el título y el acordeón */
+  overflow: hidden; /* Oculta cualquier contenido que desborde */
+  white-space: nowrap; /* Evita que el texto pase a una nueva línea */
+  text-overflow: ellipsis; /* Añade '...' al final si el texto es demasiado largo */
+}
+
+#filtro-galeria .boton-volver-filtro {
+  background-color: #1084e9;
+  color: white;
+  border-radius: 15px;
+  margin-left: 0.2rem;
+  margin-bottom: 1rem;
+  width: 100px;
+  height: 2.5rem;
+  padding: 5px;
+  font-size: 14px;
+}
+
+#filtro-galeria .boton-volver-filtro:hover {
+  background-color: #0056b3;
+}

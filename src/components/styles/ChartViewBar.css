@@ -1,0 +1,19 @@
+.modal-chart-container {
+  text-align: center;
+  margin: 1.25rem; /* 20px */
+}
+
+.modal-chart-container h3 {
+  margin-bottom: 1.25rem; /* 20px */
+}
+
+.modal-chart {
+  width: 100%;
+  height: 100%;
+}
+
+@media (max-width: 48rem) { /* 768px */
+  .modal-chart {
+    height: 18.75rem; /* 300px */
+  }
+}

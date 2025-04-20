@@ -1,0 +1,111 @@
+body {
+  overflow-y: auto; /* Habilitar scroll vertical en la página */
+}
+
+/* index.css o archivo CSS principal */
+#acordeon-historico .accordion {
+  margin:20px;
+}
+
+/* Texto año y mes */
+#acordeon-historico .accordion-button {
+  font-weight: bold;
+  background-color: #f0f0f0;
+
+}
+
+#acordeon-historico .accordion-button:not(.collapsed) {
+  background-color: #1084e9; /* Color de fondo deseado */
+  color: white;
+}
+
+#acordeon-historico .accordion-button::after {
+  color: white; /* Cambia al color deseado */
+}
+
+/* Estilo para todas las tarjetas */
+#acordeon-historico .card {
+  border: 1px solid #ddd; /* Bordes de color gris claro */
+  border-radius: 8px; /* Bordes redondeados */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  height: 100%;
+}
+
+/* Estilo para el título de la tarjeta */
+#acordeon-historico .card-title{
+  font-size: 1.8rem; /* Tamaño de fuente */
+  color: #333; /* Color del texto */
+  margin-bottom: 2rem;;
+}
+
+/* Estilo para el contenido de la tarjeta */
+#acordeon-historico .card-text ul {
+  list-style-type: none; /* Sin puntos */
+  padding: 0;
+}
+
+#acordeon-historico .card-text li {
+  margin-top: 0.5rem; /* Espacio entre los elementos */
+}
+
+/* Estilo para los botones */
+.container-botones {
+  display: flex; /* Activar Flexbox en el contenedor */
+  justify-content: space-between; /* Distribuir los botones de manera uniforme */
+  gap: 0.2rem; /* Espacio entre los botones */
+}
+
+.botones {
+  background-color: #1084e9; /* Color de fondo */
+  color: white; /* Color del texto */
+  border-radius: 15px; /* Bordes redondeados */
+  height: 3rem; /* La altura del botón */
+  font-size: 15px;
+  flex-grow: 1; /* Hace que los botones ocupen el mismo ancho disponible */
+  text-align: center; /* Centra el texto dentro del botón */
+  display: flex;
+  align-items: center; /* Centra el texto verticalmente */
+  justify-content: center; /* Centra el texto horizontalmente */
+  padding: 10px; /* Espaciado interno */
+  max-width: 100%; /* Evita que los botones se excedan en ancho */
+  font-weight: 500;
+  margin: 3px;
+}
+
+#acordeon-historico .botones:hover {
+  background-color: #0056b3;
+}
+
+/* Total Irregularidades y Irregularidades por tipo (texto) */
+#acordeon-historico .irregularidades-label {
+  display: block; /* Hace que cada etiqueta esté en una nueva línea */
+  font-size: 1.5rem; /* Tamaño de fuente estándar */
+  color: #333; /* Color gris oscuro */
+  margin-bottom: 0.5rem; /* Espacio debajo del texto */
+  font-weight: 500; /* Negrita */
+}
+
+/* Estilo para los valores */
+#acordeon-historico .irregularidades-value {
+  font-size: 1.5rem; /* Tamaño de fuente más grande */
+  color: #1084e9; /* Color azul para los totales */
+  font-weight: 500; /* Negrita para hacerlos más llamativos */
+}
+
+#acordeon-historico .irregularidad-item {
+  display: flex; /* Usar flexbox para alinear los elementos */
+  justify-content: space-between; /* Espacio entre los elementos */
+  align-items: center; /* Centrar verticalmente */
+
+}
+
+#acordeon-historico .tipo-irregularidades {
+  color: #333; /* Color azul para los totales */
+  font-weight: 500; /* Negrita para hacerlos más llamativos */
+}
+
+#acordeon-historico .tipo-irregularidades-value {
+  color: #1084e9; /* Color azul para los totales */
+  font-weight: bold; /* Negrita para hacerlos más llamativos */
+  margin-right: 3rem;
+}

@@ -1,0 +1,29 @@
+.status-box {
+  background-color: #1084e9;
+  color: white;
+  padding: 20px 30px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  animation: fade 1s infinite;
+}
+
+.status-container {
+  position: absolute;
+  bottom: 40px;
+  left: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.event-message {
+  background-color: #ffcc00 !important;
+  color: black !important;
+}
+
+@keyframes fade {
+  0% { background-color: #1084e9; }
+  50% { background-color: #0055a0; }
+  100% { background-color: #1084e9; }
+}

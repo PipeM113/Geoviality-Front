@@ -1,0 +1,47 @@
+.filter-nav {
+  list-style: none;
+  padding: 0; /* Asegúrate de que no haya padding en la lista */
+  margin: 30px 20px;
+  display: flex; /* Alinear los elementos horizontalmente */
+  gap: 5px; /* Espacio entre los botones */
+  position: absolute;
+  z-index: 10;
+}
+
+.filter-nav__item {
+  margin: 0; /* Elimina el margen para evitar separación entre botones */
+}
+
+.filter-nav__link {
+  padding: 10px 15px; /* Ajusta el padding para hacer los botones más pequeños */
+  border: 2px solid #a1a1a1; /* Borde visible para cada botón */
+  border-radius: 12px; /* Bordes rectos para los botones */
+  margin: 0; /* Sin margen entre botones */
+  margin-right: 10px;
+  cursor: pointer;
+  transition: border-color 0.3s ease-in-out, color 0.3s ease-in-out, background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  color: #1084e9; /* Fondo claro para los botones */
+  background-color: #fff; /* Texto oscuro para mejor contraste */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra ligera para destacar los botones */
+  flex: 0; /* Hace que cada botón no se expanda */
+  text-align: center; /* Centra el texto */
+  text-decoration: none; /* Elimina el subrayado del texto del botón */
+}
+
+.filter-nav__link:hover,
+.filter-nav__link--active {
+  color: #fff; /* Cambia el fondo al pasar el ratón o al estar activo */
+  background-color: #1084e9; /* Texto blanco cuando está activo */
+  border-color: #888; /* Cambia el color del borde al estar activo */
+}
+/* Opcional: Animación suave al hacer hover */
+.filter-nav__link:hover {
+  transform: translateY(-5px); /* Desplaza ligeramente hacia arriba */
+}
+
+
+
+
+
+
+

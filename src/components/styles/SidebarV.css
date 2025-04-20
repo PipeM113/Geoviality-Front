@@ -1,0 +1,109 @@
+.sidebarV {
+    position: fixed;
+    top: 15%;
+    right: 0;
+    width: 300px;
+    height: 75%;
+    overflow-y: hidden;
+    background-color: #ffffff;
+    border-left: 5px solid #1084e9;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, visibility 0.3s ease;
+    z-index: 1000;
+    padding: 12px;
+
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+    transform: translateX(100%); /* Ocultar inicialmente */
+    visibility: hidden; /* Ocultar inicialmente */
+  }
+
+  .sidebarV-visible {
+    transform: translateX(0); /* Mostrar cuando es visible */
+    visibility: visible; /* Mostrar cuando es visible */
+  }
+
+.close-button {
+    background: transparent; /* Sin fondo */
+    color: black;
+    border: none; /* Sin borde */
+    padding: auto;
+    cursor: pointer; /* Cambiar el cursor al pasar sobre el botón */
+    float: right;
+    border-radius: 5px;
+    font-size: 24px; /* Tamaño del botón */
+    transition: background 0.3s ease;
+
+}
+
+.close-button:hover {
+    color: #1084e9;
+}
+.sidebarV h2 {
+    color: #333333;
+    margin: 15px;
+
+  }
+
+.sidebarV-content {
+    margin-top: 25px;
+}
+
+.sidebarV-card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 5px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+  }
+
+
+  .image-container {
+    margin-top: 20px;
+}
+
+.image-carousel {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.carousel-image {
+    width: 100%;
+    max-height: 150px;
+    object-fit: contain;
+    border-radius: 8px;
+    margin: 0 10px;
+}
+
+.carousel-button {
+    background-color: transparent;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    padding: 0 10px;
+}
+
+.carousel-button.left {
+    margin-right: auto;
+}
+
+.carousel-button.right {
+    margin-left: auto;
+}
+
+.sidebar-close-button {
+    background: #ffbb00;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    float: right;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: background 0.3s ease;
+  }
+
+  .sidebar-close-button:hover {
+    background: #1084e9;
+  }

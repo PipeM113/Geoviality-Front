@@ -1,0 +1,178 @@
+/* Sidebar.css */
+.sidebar {
+  position: fixed;
+  top: 10%;
+  right: 0;
+  width: 300px;
+  height: 86vh;
+  overflow-y: hidden;
+  background-color: #ffffff;
+  border-left: 5px solid #1084e9;
+  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, visibility 0.3s ease;
+  z-index: 1000;
+  padding: 12px;
+
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;
+  transform: translateX(100%); /* Ocultar inicialmente */
+  visibility: hidden; /* Ocultar inicialmente */
+}
+
+.sidebar-visible {
+  transform: translateX(0); /* Mostrar cuando es visible */
+  visibility: visible; /* Mostrar cuando es visible */
+}
+
+.sidebar-close-button {
+  background: #ffbb00;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+  float: right;
+  border-radius: 5px;
+  font-size: 14px;
+  transition: background 0.3s ease;
+}
+
+.sidebar-close-button:hover {
+  background: #1084e9;
+}
+
+.sidebar-card {
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 5px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.sidebar h3 {
+  color: #333333;
+  margin-bottom: 15px;
+}
+
+.sidebar-info-group {
+  background-color: #ffffff;
+  color: white;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 0px;
+}
+
+.sidebar-info-group p {
+  margin: px 0;
+}
+
+.sidebar-image-block {
+  margin-top: 0px;
+}
+
+.sidebar img {
+  max-width: 43%;
+  border-radius: 8px;
+}
+
+.sidebar p {
+  font-size: 14px;
+  color: #555555;
+  margin: 5px 0;
+}
+
+/* Estilos para la imagen dentro del sidebar */
+.clickable-image {
+  width: 100%; /* Asegura que la imagen ocupe todo el ancho del contenedor */
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.clickable-image:hover {
+  transform: scale(1.03);
+}
+
+/* Estilos para el modal */
+.modal {
+
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%; /* Ajusta el ancho según tus necesidades */
+  height: 100%; /* Altura completa de la barra lateral */
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+/* Estilos para el contenido del modal */
+.modal-content {
+  background: #fff;
+  width: 100%;
+  height: 100%;
+  padding: 0; /* Elimina el padding para que la imagen ocupe todo el espacio */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position:absolute;
+}
+
+/* Estilos para la imagen del modal */
+.modal-image {
+  width: 100%; /* Asegura que la imagen ocupe todo el ancho del contenedor */
+  height: 100%; /* Asegura que la imagen ocupe toda la altura del contenedor */
+  object-fit: contain; /* Ajusta la imagen para que se contenga dentro del contenedor sin distorsionarse */
+}
+
+/* Estilos para el botón de cerrar */
+.modal-close {
+  position: absolute;
+  top: 10px;
+  right: 30px;
+  font-size: 30px;
+  color: #ff321b;
+  cursor: pointer;
+  z-index: 1100;
+}
+
+.modal-close:hover {
+  color: #c0392b;
+}
+
+
+/*
+
+.image-carousel {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.carousel-image {
+  width: 100%;
+  max-height: 150px;
+  object-fit: contain;
+  border-radius: 8px;
+  margin: 0 10px;
+}
+
+.carousel-button {
+  background-color: transparent;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  padding: 0 10px;
+}
+
+.carousel-button.left {
+  margin-right: auto;
+}
+
+.carousel-button.right {
+  margin-left: auto;
+}
+
+
+*/

@@ -1,0 +1,178 @@
+body {
+  overflow-y: auto; /* Habilitar scroll vertical en la página */
+}
+
+#nota-busqueda {
+  margin:2ch;
+}
+/* index.css o archivo CSS principal */
+#busqueda-personalizada .accordion {
+  margin-right:1rem;
+  margin-left:1rem;
+}
+
+/* Texto año y mes */
+#busqueda-personalizada .accordion-button {
+  background-color: #f0f0f0;
+  font-weight: bold;
+
+}
+
+#busqueda-personalizada .accordion-button:not(.collapsed) {
+  background-color: #1084e9; /* Color de fondo deseado */
+  color: white;
+}
+
+#busqueda-personalizada .accordion-button::after {
+  color: white; /* Cambia al color deseado */
+}
+
+
+#busqueda-personalizada .desde-label, .hasta-label {
+  font-weight: bold;
+  color: #333; /* Ajusta el color según tu diseño */
+}
+
+#busqueda-personalizada .anio-selector, .mes-selector {
+  margin-bottom: 0.5rem; /* Espacio entre los selectores */
+  border: 1px solid #ccc; /* Borde de los selectores */
+  border-radius: 4px; /* Bordes redondeados */
+}
+
+#busqueda-personalizada .anio-selector:focus, .mes-selector:focus {
+  border-color: #007bff; /* Color del borde al enfocar */
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Sombra al enfocar */
+}
+
+/* Estilo para todas las tarjetas */
+#busqueda-personalizada .card {
+  border: 1px solid #ddd; /* Bordes de color gris claro */
+  border-radius: 8px; /* Bordes redondeados */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  height: 100%;
+}
+
+/* Estilo para el título de la tarjeta */
+#busqueda-personalizada .card-title{
+  font-size: 1.8rem; /* Tamaño de fuente */
+  color: #333; /* Color del texto */
+  margin-bottom: 2rem;;
+}
+
+/* Estilo para el contenido de la tarjeta */
+#busqueda-personalizada .card-text ul {
+  list-style-type: none; /* Sin puntos */
+  padding: 0;
+}
+
+#busqueda-personalizada .card-text li {
+  margin-top: 0.5rem; /* Espacio entre los elementos */
+}
+
+/* Estilo para los botones */
+#busqueda-personalizada .container-botones {
+  display: flex;
+  justify-content: center; /* Centra horizontalmente */
+  align-items: center; /* Centra verticalmente (si el contenedor tiene altura definida) */
+  flex-direction: row; /* Alinea los botones en fila */
+}
+
+#busqueda-personalizada .botones {
+  background-color: #1084e9; /* Color de fondo */
+  color: white; /* Color del texto */
+  border-radius: 15px; /* Bordes redondeados */
+  margin: 0.2rem;
+  width: 100%; /* El botón ocupa todo el ancho disponible */
+  max-width: 100px; /* Pero no excede 150px */
+  height: 3rem; /* La altura se ajusta automáticamente */
+  padding: 10px; /* Espaciado interno */
+  font-size: 15px;
+}
+
+#busqueda-personalizada .boton-buscar {
+  background-color: #1084e9; /* Color de fondo */
+  color: white; /* Color del texto */
+  border-radius: 15px; /* Bordes redondeados */
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+  width: 100%; /* El botón ocupa todo el ancho disponible */
+  max-width: 100px; /* Pero no excede 150px */
+  height: 3rem; /* La altura se ajusta automáticamente */
+}
+
+/* Total Irregularidades y Irregularidades por tipo (texto) */
+#busqueda-personalizada .irregularidades-label {
+  display: block; /* Hace que cada etiqueta esté en una nueva línea */
+  font-size: 1.5rem; /* Tamaño de fuente estándar */
+  color: #333; /* Color gris oscuro */
+  margin-bottom: 0.5rem; /* Espacio debajo del texto */
+  font-weight:500;
+}
+
+#busqueda-personalizada .irregularidades-value {
+  font-size: 1.5rem; /* Tamaño de fuente más grande */
+  color: #1084e9; /* Color azul para los totales */
+  font-weight: 500;
+}
+
+
+/* Total Irregularidades y Irregularidades por tipo (texto) */
+#busqueda-personalizada .irregularidad-item {
+  display: flex; /* Usar flexbox para alinear los elementos */
+  justify-content: space-between; /* Espacio entre los elementos */
+  align-items: center; /* Centrar verticalmente */
+
+}
+
+#busqueda-personalizada .tipo-irregularidades {
+  color: #333; /* Color azul para los totales */
+  font-weight: 500; /* Negrita para hacerlos más llamativos */
+}
+
+#busqueda-personalizada .tipo-irregularidades-value {
+  color: #1084e9; /* Color azul para los totales */
+  font-weight: bold; /* Negrita para hacerlos más llamativos */
+  margin-right: 3rem;
+}
+
+#ultimos-meses {
+  margin-top: 0.5rem;
+}
+
+#ultimos-meses .ultimos-meses-label {
+  margin-bottom: 0.5rem;
+}
+
+#ultimos-meses .form-control {
+  width: auto;
+  margin-bottom: 0.5rem;
+}
+
+#ultimos-meses .boton-ultimos-meses {
+  background-color: #1084e9; /* Color de fondo */
+  color: white; /* Color del texto */
+  border-radius: 15px; /* Bordes redondeados */
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+  width: 100%; /* El botón ocupa todo el ancho disponible */
+  max-width: 100px; /* Pero no excede 150px */
+  height: 3rem; /* La altura se ajusta automáticamente */
+}
+
+#resultado-busqueda-h5 {
+  font-size: 1.5rem;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); /* Sombra del texto */
+}
+
+#b-rapida-pers{
+  font-size: 1.5rem;
+}
+
+
+
+
+
+
+
+
+
